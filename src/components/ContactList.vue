@@ -4,10 +4,10 @@
             contacts: { type: Array, default: [] },
             activeIndex: { type: Number, default: -1},
         },
-        emits: ["update: active Index"],
+        emits: ["update:activeIndex"],
         methods: {
             updateActiveIndex(index) {
-                this.$emit("update: activeIndex", index);
+                this.$emit("update:activeIndex", index);
             }
         }
     };
